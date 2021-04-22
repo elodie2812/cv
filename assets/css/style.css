@@ -1,0 +1,372 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #5a656e;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courgette', cursive;
+    color: rgb(10, 95, 108);
+  }
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+#scrollTop a {
+    color: rgb(75, 120, 127);
+    font-size: 2em;  
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 60vh;
+    background: url("../images/island.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding: 0 15px;
+  }
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: white;
+}
+
+#hero h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#hero .btn-get-started {
+    font-size: 64px;
+    transition: 0.5s;
+    height: 60px;
+    color: white;
+}
+
+#hero .btn-get-started:hover {
+    padding-top: 10px;
+    color: rgb(75, 120, 127)
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+#header .logo h1 {
+    font-size: 26px;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+  }
+  
+#header .logo h1 a, #header .logo h1 a:hover {
+    color: #2c4964;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: rgb(10, 95, 108);
+    padding: 15px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: rgb(75, 120, 127);
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+    padding: 60px 0;
+}
+  
+.section-bg {
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .image {
+    min-height: 400px;
+}
+
+.about img {
+    border-radius: 50%;
+    min-height: 100px;  
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+.skills .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #5a656e;
+}
+
+.skills i {
+    font-size: 2em;
+    color: rgb(75, 120, 127);
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(75, 120, 127);
+    font-family: 'Playfair Display', serif;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgb(10, 95, 108);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c4964;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4ebf3;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid rgb(10, 95, 108)
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(75, 120, 127);
+    font-family: 'Playfair Display', serif;
+}
+
+.contact .social-links a {
+    font-size: 22px;
+    display: inline-block;
+    background: #fff;
+    color: rgb(10, 95, 108);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid rgb(10, 95, 108);
+}
+.contact .social-links a:hover {
+    background: rgb(10, 95, 108);
+    color: #fff;
+}
+
+.contact .info {
+    color: #5a656e;
+}
+
+.contact .info i {
+    font-size: 26px;
+    color: rgb(10, 95, 108);
+    float: left;
+    line-height: 1;
+}
+
+.contact .info p {
+    padding: 0 0 10px 42px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #5a656e;
+}
+
+.contact a:hover {
+    color: rgb(10, 95, 108)
+}
+
+.contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+  
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+  
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    border-color: rgb(75, 120, 127);
+}
+
+.contact .php-email-form button[type="submit"] {
+    background: rgb(10, 95, 108);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: rgb(75, 120, 127)
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    background: #fff;
+    padding: 24px 0;
+    font-size: 14px;
+    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    color: rgb(10, 95, 108);
+    font-weight: bold;
+  }
+
