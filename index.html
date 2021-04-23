@@ -19,17 +19,17 @@
     <script src="https://kit.fontawesome.com/5525ad1b2d.js" crossorigin="anonymous"></script>
     
     <title>Mon CV Online</title>
-
+   
 </head>
 <body>
-    <!-- ===== Hero Header === -->
+<!-- ===== Hero Header === -->
+      
     <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
         <h1>Bienvenue !</h1>
-        <h2>Je suis actuellement en formation WebDesigner...</h2>
+        <h2 class="text-center">Je suis actuellement en formation WebDesigner...</h2>
         <a href="#about" class="btn-get-started scrollto"><i class="fas fa-chevron-down"></i></a>
     </section>
-
-    <!-- ======= Header ======= -->
+    <!-- ======= Header ======= 
     <header id="header">
         <div class="container d-flex align-items-center"> 
 
@@ -37,7 +37,7 @@
                 <h1 class="text-light"><a href="index.html"><span>Élodie FERRY (DUFOUGERAY)</span></a></h1>
             </div>
 
-    <!-- Nav-menu -->
+     Nav-menu 
       <nav class="nav-menu d-md-block">
         <ul>
           <li class="active"><a href="index.html">Accueil</a></li>
@@ -46,13 +46,46 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav>-->
 
+    <header id="header">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-end" id="navbar_top">
+                    <h2 class="text-light"><a href="index.html"><span>Élodie FERRY (DUFOUGERAY)</span></a></h2>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">Qui-suis-je ?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#resume">Expériences</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hobbies">Centres d'intérêt</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                </nav>
+            </div>
         </div>
+    
         
   </header>
   <!-- End Header -->
-    <main id="main">
+    <main id="main" class="content">
         <div id="scrollTop">
             <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
         </div>
@@ -64,7 +97,7 @@
                     <div class="col-md-7 pl-0 pl-md-5 pr-md-1 d-flex align-items-stretch">
                         <div class="content d-flex flex-column justify-content-center">
                             <h3>Qui suis-je ?</h3>
-                            <p>Conseillère voyages, 14 années d'expérience progressive dans le secteur du Tourisme. Maîtrisant l'accueil clientèle, les tâches administratives et le back-office, je possède également des compétences en Informatique. En pleine reconversion professionnelle vers les métiers du numérique ! Professionnelle énergique, motivée, polyvalente et dotée d'un solide esprit d'équipe.</p>
+                            <p>Conseillère voyages, 14 années d'expérience progressive dans le secteur du Tourisme. Maîtrisant l'accueil clientèle, les tâches administratives et le back-office, je possède également des compétences en Informatique. Pendant ces 14 années passées dans le secteur du tourisme, j’ai eu la chance de mettre en place le site Web www.rond-point-evasion.fr en tant qu’autodidacte et je l’ai alimenté et mis à jour régulièrement. Je me suis également chargée de la communication sur les réseaux sociaux. Ce qui m’a beaucoup plu. C'est pourquoi je suis en pleine reconversion professionnelle vers les métiers du numérique ! Professionnelle énergique, motivée, polyvalente et dotée d'un solide esprit d'équipe.</p>
                         </div>
                     </div>
                 </div>
@@ -79,41 +112,58 @@
             </div>
 
             <div class="row skills-content">
-                <div class="col-md-6">
+                <div class="col-md-4 align-self-center">
                     <div class="team">
-                        <span class="skill">Esprit d'équipe <i class="fas fa-users equipe pl-5"></i> </span>
+                        <span class="skill"> <i class="fas fa-users equipe pl-5"></i> Esprit d'équipe</span>
                     </div>
                     <div class="relationnel">
-                        <span class="skill">Sens du relationnel <i class="fas fa-comments pl-5"></i> </span>
+                        <span class="skill"><i class="fas fa-comments pl-5"></i> Sens du relationnel</span>
                     </div>
                     <div class="comm">
-                        <span class="skill">Communication <i class="far fa-comment-alt pl-5"></i> </span>
-                    </div>
-                    <div class="html">
-                        <span class="skill"> HTML <i class="fab fa-html5 pl-5"></i></span>
-                    </div>
-                    <div class="css">
-                        <span class="skill">CSS <i class="fab fa-css3-alt pl-5"></i></span>
+                        <span class="skill"><i class="far fa-comment-alt pl-5"></i> Communication</span>
                     </div>
                 </div>
-                <div class="col-md-6">  
-                    <div class="javascript">
-                        <span class="skill">JavaScript <i class="fab fa-js-square pl-5"></i></span>
-                    </div>
-                    <div class="wordpress">
-                        <span class="skill">WordPress <i class="fab fa-wordpress pl-5"></i></span>
-                    </div>
+                <div class="col-md-4 align-self-center">
                     <div class="illustrator">
-                        <span class="skill">Illustrator </span>
+                        <span class="skill"><img src="assets/images/illustrator.png" alt="logo Illustrator"> Illustrator</span>
                     </div>
                     <div class="indesign">
-                        <span class="skill">InDesign </span>
+                        <span class="skill"><img src="assets/images/indesign.png" alt="logo InDesign"> InDesign </span>
                     </div>
                     <div class="photoshop">
-                        <span class="skill">Photoshop </span>
+                        <span class="skill"><img src="assets/images/photoshop.png" alt="logo Photoshop"> Photoshop </span>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <div class="wordpress">
+                        <span class="skill"><i class="fab fa-wordpress pl-5"></i> WordPress </span>
+                    </div>
+                    <div class="html">
+                        <span class="skill"> <i class="fab fa-html5 pl-5"></i> HTML </span>
+                    </div>
+                    <div class="css">
+                        <span class="skill"><i class="fab fa-css3-alt pl-5"></i> CSS </span>
+                    </div>
+                    <div class="javascript">
+                        <span class="skill"><i class="fab fa-js-square pl-5"> </i>JavaScript </span>
                     </div>
                 </div>
             </div>
+                <div>
+                    <h2>Langues</h2>
+                </div>
+            <div class="row">
+                <div class="english col-md-4">
+                    <span class="skill"><img src="assets/images/anglais.png" alt="drapeau anglais"> Anglais</span>
+                </div>
+                <div class="spanish col-md-4">
+                    <span class="skill"><img src="assets/images/espagnol.png" alt="drapeau espagnol"> Espagnol</span>
+                </div>
+                <div class="italian col-md-4">
+                    <span class="skill"><img src="assets/images/italien.png" alt="drapeau italien"> Italien</span>
+                </div>
+            </div>
+        </div>
     </section>
 <!-- End Skills Section -->
 
@@ -129,11 +179,12 @@
                         
                         <h3 class="resume-title">En résumé</h3>
                             <div class="resume-item pb-0">
-                                <h4>Élodie FERRY</h4>
-                                <p class="text-justify"><em>Après 14 ans dans le secteur du tourisme, j’ai eu la chance de mettre en place le site Web www.rond-point-evasion.fr en tant qu’autodidacte et je l’ai alimenté et mis à jour régulièrement. Je me suis également chargée de la communication sur les réseaux sociaux. Ce qui m’a beaucoup plu. Actuellement EN RECONVERSION PROFESSIONNELLE vers les métiers du WebDesign & de la Communication Digitale ! </em></p>
+                                <h4>Élodie FERRY (née DUFOUGERAY)</h4>
+                                <p class="text-justify"><em>Après 14 ans dans le secteur du tourisme, j’ai décidé de changer de voix et de me reconvertir vers les métiers du WebDesign & de la Communication Digitale ! Déterminée et polyvalente, je compte bien approfondir mes connaissances dans ce domaine.</em></p>
                                 <ul>
+                                    <li>Née le 28/12/1983</li>
                                     <li>Le Havre</li>
-                                    <li>elodie.ferry2812@gmail.com</li>
+                                    <li><a class="text-decoration-none" href="mailto:elodie.ferry2812@gmail.com">elodie.ferry2812@gmail.com</a></li>
                                   </ul>
                             </div>
                         
@@ -160,13 +211,17 @@
                             <div class="resume-item">
                                 <h4>Conseillère Voyages</h4>
                                 <h5>2004/2006</h5>
-                                <p><em>Frantour Voyages / Rond-Point-Évasion / Selectour Voyages Fromentin</em></p>
+                                <p><em>Frantour Voyages</em></p>  
+                                <p><em>Rond-Point-Évasion</em></p>
+                                <p><em>Selectour Voyages Fromentin</em></p>
                             </div>
 
                             <div class="resume-item">
                                 <h4>Récpetionniste</h4>
                                 <h5>2002/2004</h5>
-                                <p><em>Hôtel du Golf **** Lucien Barrière (Deauville), Société des Régates du Havre (SRH),Beach Hotel *** Pierre & Vacances (Trouville/Mer)</em></p>
+                                <p><em>Hôtel du Golf **** Groupe Lucien Barrière (Deauville)</em></p>
+                                <p><em>Société des Régates du Havre (SRH)</em></p>
+                                <p><em>Beach Hotel *** Pierre & Vacances (Trouville/Mer)</em></p>
                             </div>
                     </div>
 
@@ -222,43 +277,132 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </section>
+<!-- ======== Hobbies ======== -->
+    <section id="hobbies" class="hobbies mb-4">  
+        <div class="container">
+            <div class="section-title">
+                <h2>Centres d'intérêt</h2>
+                    <h3 class="resume-title"> <i class="fas fa-horse-head"></i> Équitation :</h3>
+                    <p>Pendant 5 ans (1995/2000) : Hors Club. Balades à cheval à Montivilliers et en Vendée. + Organisations de promenades pour les enfants (volontariat)</p>
+                    <h3 class="resume-title"> <i class="fas fa-shoe-prints"></i> Danse :</h3>
+                    <p>Pendant 8 ans : Danse classique, modern jazz et danse réunionnaise. Diverses danses latines ( Création Association Escales)</p>
+                    <h3 class="resume-title"> <i class="fas fa-umbrella-beach"></i> Voyages :</h3>
+                    <p>Pologne, République Tchèque, Angleterre, Italie, Suisse, Belgique, Croatie, Monténégro, Portugal, Espagne, Baléares, Canaries, Kos, Tunisie, Maroc, Sénégal, Cap Vert, Les Maldives, République Dominicaine, Réunion, Ile Maurice, Nouvelle-Calédonie, Indonésie, Philippines, Vietnam, îles Fidji, Argentine, Birmanie, Guadeloupe.</p>
+                    <h3 class="resume-title"> <i class="fas fa-music"></i> Musique :</h3>
+                    <p>Débutante au Piano, clavier arrangeur. (à domicile, en autoditacte)</p>
+            </div>
+        </div>   
+    </section>
 
 <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
         <div class="container">
   
-          <div class="section-title">
-            <h2>Portfolio</h2>
-            <p> Voici quelques-unes de mes créations </p>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">Tout</li>
-                <li data-filter=".filter-app">...</li>
-                <li data-filter=".filter-card">...</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p> Voici quelques-unes de mes créations </p>
             </div>
-          </div>
-
-          <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="assets/images/portfolio/mockupRpe.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
+    
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                <ul id="portfolio-filters">
+                    <li data-filter="*" class="filter-active">Tout</li>
+                    <li data-filter=".filter-app">...</li>
+                    <li data-filter=".filter-card">...</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
                 </div>
-                <div class="portfolio-links">
-                  <a href="assets/images/portfolio/mockupMobileRpe.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+
+            <div class="row portfolio-container">
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/mockupRpe.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site Vitrine d'une agence de voyages</h4>
+                                <p>Réalisé sous Wordpress</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/mockupRpe.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/MockupPdmc.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site d'une boutique d'artisanat</h4>
+                                <p>Réalisé intégralement en HTML5, CSS3</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/MockupPdmc.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/MockupPdmc.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site d'une boutique d'artisanat</h4>
+                                <p>Réalisé intégralement en HTML5, CSS3</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/MockupPdmc.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="row portfolio-container">
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/mockupRpe.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site Vitrine d'une agence de voyages</h4>
+                                <p>Réalisé sous Wordpress</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/mockupRpe.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/MockupPdmc.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site d'une boutique d'artisanat</h4>
+                                <p>Réalisé intégralement en HTML5, CSS3</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/MockupPdmc.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/portfolio/MockupPdmc.jpeg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Site d'une boutique d'artisanat</h4>
+                                <p>Réalisé intégralement en HTML5, CSS3</p>
+                            </div>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/MockupPdmc.jpeg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact section-bg">
@@ -274,9 +418,10 @@
                 <div class="contact-about">
                     <h3>Élodie FERRY</h3>
                         <div class="social-links pb-4">
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/%C3%A9lodie-ferry-3b3a18205/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/fougdu76/" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/elodie2812" class="github"><i class="fab fa-github"></i></a>
                         </div>
                 </div>
             </div>
@@ -285,12 +430,12 @@
                 <div class="info">
                     <div>
                         <i class="fas fa-map-marker-alt"></i>
-                        <p> 151 rue de <br>76600 Le Havre</p>
+                        <p> 151 rue de ******** <br>76600 Le Havre</p>
                     </div>
 
                     <div>
                         <i class="far fa-envelope"></i>
-                        <p><a class= "text-decoration-none" href="mailto: elodie.ferry2812@gmail.com"> elodie.ferry2812@gmail.com</a></p>
+                        <p><a class="text-decoration-none" href="mailto:elodie.ferry2812@gmail.com"> elodie.ferry2812@gmail.com</a></p>
                     </div>
 
                     <div>
@@ -337,10 +482,29 @@
 
     <footer>
         <div class="container">
-            <div class="copyright text-center mb-4"> © Copyright <strong><span>Élodie FERRY / 2021</span></strong>
-      </div>
-    </div>
+            <div class="copyright text-left mb-4"> © Copyright <strong><span>Élodie FERRY / 2021</span></strong>
+            </div>
+        </div>
     </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function(){
+    var winH = (((window.innerHeight/60)*100)-window.innerHeight);
+  window.addEventListener('scroll', function() {
+    console.log(window.innerHeight+' / '+winH);
+      if (window.scrollY > winH-50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.header').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+    </script>
     
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
