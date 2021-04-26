@@ -56,14 +56,15 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-#hero .btn-get-started {
+#hero .btn-scroll {
     font-size: 64px;
     transition: 0.5s;
     height: 60px;
     color: white;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 
-#hero .btn-get-started:hover {
+#hero .btn-scroll:hover {
     padding-top: 10px;
     color: rgb(75, 120, 127)
 }
@@ -72,7 +73,6 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-
     padding: 0;
     background: #fff;
   }
@@ -96,36 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation 
-.nav-menu, .nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-menu > ul > li {
-    position: relative;
-    white-space: nowrap;
-    float: left;
-}
-
-.nav-menu a {
-    display: block;
-    position: relative;
-    color: rgb(10, 95, 108);
-    padding: 15px;
-    transition: 0.3s;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-}
-
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: rgb(75, 120, 127);
-    text-decoration: none;
-}
-*/
-
 #navbarNav {
     height: fit-content;
 }
@@ -280,7 +250,7 @@ section {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
   }
   
-  .portfolio #portfolio-filters li {
+.portfolio #portfolio-filters li {
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px 8px 15px;
@@ -291,11 +261,14 @@ section {
     color: #5a656e;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  .portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.filter-active {
+.portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.filter-active {
     color: rgb(10, 95, 108)
-  }
+}
+.portfolio-wrap a:hover {
+    filter:contrast(200%);
+}
 
 /*--------------------------------------------------------------
 # Contact
