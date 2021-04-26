@@ -144,7 +144,7 @@ section {
 
 .about img {
     border-radius: 50%;
-    min-height: 100px;  
+    
 }
 
 /*--------------------------------------------------------------
@@ -165,6 +165,10 @@ section {
     font-size: 2em;
     color: rgb(75, 120, 127);
     padding-right: 10px;
+}
+
+.creative {
+    padding-left: 40px;
 }
 
 /*--------------------------------------------------------------
