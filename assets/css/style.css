@@ -119,9 +119,77 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.navbar-toggler-icon {
-    color: rgb(240, 192, 3);
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(10, 95, 108);
 }
+
+/* Animation burger croix*/
+@media screen AND (max-width: 991px) {
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-nav {
+        position: fixed;
+        left: -150%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-nav.active {
+        left: 0;
+    }
+}
+
+@media screen AND (max-width: 667px) {
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-nav {
+        position: fixed;
+        left: -150%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-nav.active {
+        left: 0;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -146,14 +214,14 @@ section {
 
 /* image default entre 990px et 761px ! */
 
-@media (max-width: 991px) {
+@media screen AND (max-width: 991px) {
     .about img {
       width: 100%;
       height: fit-content;
     }
   }
   
-  @media (max-width: 667px) {
+  @media screen AND (max-width: 667px) {
     .about img {
       width: 100%;
     }
@@ -412,6 +480,20 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
     background: rgb(75, 120, 127)
 }
+
+/*.btn {
+    background: rgb(10, 95, 108);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.btn :hover {
+    background: rgb(75, 120, 127)
+}
+*/
 
 /*--------------------------------------------------------------
 # Footer

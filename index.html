@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Réalisation CV online">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
     <!-- Favicons -->
     <link href="assets/images/favicon.png" rel="icon">
@@ -54,7 +54,11 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-end" id="navbar_top">
                     <h2 class="text-light"><a href="index.html"><span>Élodie FERRY (DUFOUGERAY)</span></a></h2>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
                         </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav mr-auto">
@@ -444,7 +448,9 @@
               <div class="error-message"></div>
               <div class="sent-message">Votre message a été envoyé avec succès. Merci !</div>
             </div>
-            <div class="text-center pb-4"><button type="submit">Envoyer message</button></div>
+            <div class="text-center pb-4">
+                <!--<a class="btn" href="mailto:elodie.ferry2812@gmail.com" role="button">Envoyer message</a>-->
+                <button type="submit">Envoyer message</button></div>
           </form>
         </div>
 
@@ -464,6 +470,28 @@
     </footer>
 
     <script>
+//Script navbar hamburger :
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".navbar-nav");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+        // To close menu when click on links :
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+//Script navbar fixe 
         console.log(window.innerWidth);
 document.addEventListener("DOMContentLoaded", function(){
     var winH = (((window.innerHeight/60)*100)-window.innerHeight);
@@ -481,10 +509,17 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
+
+
     </script>
     
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
     </body>
 </html>
