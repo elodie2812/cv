@@ -308,18 +308,18 @@
                 <h2>Portfolio</h2>
                 <p> Voici quelques-unes de mes créations </p>
             </div>
-    
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                <ul id="portfolio-filters">
-                    <li data-filter="*" class="filter-active">Tout</li>
-                    <li data-filter=".filter-web">Web</li>
-                    <li data-filter=".filter-games">Games</li>
-                    <li data-filter=".filter-...">...</li>
-                </ul>
+            <!--
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                    <ul id="portfolio-filters">
+                        <li data-filter="*" class="filter-active">Tout</li>
+                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-games">Games</li>
+                        <li data-filter=".filter-...">...</li>
+                    </ul>
+                    </div>
                 </div>
-            </div>
-
+            -->
             <div class="row portfolio-container">
                 <div class="col-md-4 portfolio-item filter-web">
                     <div class="portfolio-wrap">
@@ -379,6 +379,9 @@
                             </div>
                     </div>
                 </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a class="btn details" href="http://cv-lhp4-dw-elodief.manusien-ecolelamanu.fr/" role="button">Voir plus de détails sur mon ... PORTFOLIO en ligne</a>
+                </div>
             </div>
         </div>
     </section>
@@ -426,31 +429,32 @@
         </div>
 
         <div class="col-lg-5 col-md-8">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Svp, Veuillez vérifier" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Votre E-mail" data-rule="email" data-msg="Svp, entrez une adresse mail valide" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Minimum 8 caractères" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Votre message"></textarea>
-              <div class="validate"></div>
-            </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Votre message a été envoyé avec succès. Merci !</div>
-            </div>
-            <div class="text-center pb-4">
-                <!--<a class="btn" href="mailto:elodie.ferry2812@gmail.com" role="button">Envoyer message</a>-->
-                <button type="submit">Envoyer message</button></div>
+          <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Svp, Veuillez vérifier votre nom" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre E-mail" data-rule="email" data-msg="Svp, entrez une adresse mail valide" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Minimum 8 caractères" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Svp, écrivez quelque chose..." placeholder="Votre message"></textarea>
+                    <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                    <div class="loading">En cours...</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Votre message a été envoyé avec succès. Merci !</div>
+                </div>
+                <div class="text-center pb-4">
+                    <!--<a class="btn" href="mailto:elodie.ferry2812@gmail.com" role="button">Envoyer message</a>-->
+                    <button type="submit">Envoyer message</button>
+                </div>
           </form>
         </div>
 
@@ -519,7 +523,7 @@ document.addEventListener("DOMContentLoaded", function(){
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/php-email-form/validate.js"></script>
     </body>
 </html>

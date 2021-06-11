@@ -354,6 +354,23 @@ section {
     filter:contrast(200%);
 }
 
+.details {
+    text-decoration: none;
+    background: rgb(10, 95, 108);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.details:hover {
+    background: rgb(75, 120, 127);
+    text-decoration: none;
+    color: white;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
