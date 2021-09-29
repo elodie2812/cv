@@ -206,19 +206,24 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about img {
     border-radius: 50%;
-    min-width: 30%;
-    max-height: 30%;
+    /*min-width: 30%;
+    max-height: 30%;*/
 }
 
 /* image default entre 990px et 761px ! */
 
 @media screen AND (max-width: 991px) {
-    .about img {
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+    }
+    /*.about img {
       width: 100%;
       height: fit-content;
-    }
+    }*/
   }
   
   @media screen AND (max-width: 667px) {
